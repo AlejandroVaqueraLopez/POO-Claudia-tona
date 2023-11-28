@@ -5,6 +5,8 @@
  * -Imprimir el tamano del arreglo.
  */
 public class multidimentionalArray {
+
+
     public static void main(String[] args){
         int matrixA[][] = {
             {1,2,2},
