@@ -1,7 +1,7 @@
 class Persona {
     private String _nombre = "";
-    int _edad = 0;
-    String _ciudad = "";
+    private int _edad = 0;
+    private String _ciudad = "";
 
     public Persona(String nombre, int edad, String ciudad){
         this._nombre = nombre;
@@ -12,6 +12,12 @@ class Persona {
     public String getNombre(){
         return this._nombre;
     }
+    public int getEdad(){
+        return this._edad;
+    }
+    public String getCiudad(){
+        return this._ciudad;
+    }
 }
 
 public class Main{
@@ -19,8 +25,8 @@ public class Main{
         Persona Julio = new Persona("Julio", 45, "Tijuana");
         System.out.println("-----------------------------------");
         System.out.println("Nombre: " + Julio.getNombre());
-        System.out.println("Edad: " + Julio._edad);
-        System.out.println("Ciudad: " + Julio._ciudad);
+        System.out.println("Edad: " + Julio.getEdad());
+        System.out.println("Ciudad: " + Julio.getCiudad());
    }
     
 }
