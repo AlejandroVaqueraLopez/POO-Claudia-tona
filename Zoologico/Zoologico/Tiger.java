@@ -4,13 +4,16 @@ public class Tiger implements Animal{
     private int _weight;
     private int _speed;
     private String _color;
+    private boolean _vaccinated;
+    private String _roar = "roar";
 
-    public Tiger(String name, int size, int weight, int speed, String color){
+    public Tiger(String name, int size, int weight, int speed, String color, boolean vaccinated){
         this._name = name;
         this._size = size;
         this._weight = weight;
         this._speed = speed;
         this._color = color;
+        this._vaccinated = vaccinated;
     }
 
     @Override
@@ -36,5 +39,12 @@ public class Tiger implements Animal{
     @Override
     public String getColor(){
         return this._color;
+    }
+    @Override
+    public void setVaccinated(boolean value){
+        this._vaccinated = value;
+    }
+    public String roar(){
+        return this._roar;
     }
 }

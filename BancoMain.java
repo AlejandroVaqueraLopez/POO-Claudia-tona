@@ -59,7 +59,7 @@ class Account {
 
 }
 
-public class BankMain {
+public class BancoMain {
     public static void main(String[] args){
 
         int opc = 0;
